@@ -1,0 +1,24 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-auto-rows: 3fr;
+    grid-auto-columns: 1fr;
+
+}
+
+.item {
+    background-color: blueviolet;
+    font-size: 20px;
+    margin: 10px;
+}
