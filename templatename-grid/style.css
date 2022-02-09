@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+    grid-template-areas: 
+                    "header header header"
+                    "sidebar content content"
+                    "sidebar . ."
+                    "box1 box1 box1"
+                    ". footer footer";
+
+
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+    background-color: red;
+    padding: 10px;
+}
+
+.content {
+    grid-area: content;
+    background-color: aqua;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: blue;
+}
+
+.box-1 {
+    grid-area: box1;
+    background-color: blueviolet;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: brown;
+}
