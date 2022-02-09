@@ -8,7 +8,7 @@
     background-color: aqua;
     padding: 10px;
     margin: 10px;
-
+    /* grid-template-columns:repeat(3,1fr);  burada repeat value' i ile kaç adet sütun alacağımızı belirleyebiliyoruz.*/
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
     grid-template-rows: 1fr 2fr 2fr;
@@ -21,4 +21,6 @@
     background-color: blueviolet;
     font-size: 20px;
     margin: 10px;
+    padding: 10px;
+    align-content: center;
 }

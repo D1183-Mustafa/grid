@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: aqua;
+    /* padding: 10px; */
+    margin: 10px;
+    /* grid-template-columns:repeat(3,1fr);  burada repeat value' i ile kaç adet sütun alacağımızı belirleyebiliyoruz.*/
+    /* display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-auto-rows: 3fr;
+    grid-auto-columns: 1fr; */
+
+    /* ********************************* */
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+
+}
+
+.item:first-child {
+    /* grid-column-start: 2;    /*burada yaptığımız işlemde sütunların hangi sütunda başlayıp biteceğini ayarlayabiliyoruz */
+    /*grid-column-end: 5; */
+    /* grid-column: 2 / 5; */
+    /* grid-column: 2 / span 3; */
+/* 
+    grid-row-start: 2;
+    grid-row-end: 4; */
+    /* grid-row: 2 / 4; */
+    /* grid-row: 2 / span 2; */
+
+    grid-area: 1 / 2 / span 2 / span 3;    /*satır sütun satır sütun */
+}
+
+.item {
+    background-color: blueviolet;
+    font-size: 20px;
+    /* margin: 10px; */
+    padding: 10px;
+    align-content: center;
+}
